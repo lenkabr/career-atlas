@@ -1,5 +1,5 @@
-import { portfolio } from "./data/portfolio.js?v=products-1";
-import { renderAtlas, renderEcosystemStory, renderProductStory, renderPrinciples } from "./components/render.js?v=products-1";
+import { portfolio } from "./data/portfolio.js?v=ux-1";
+import { renderAtlas, renderEcosystemStory, renderProductStory, renderPrinciples } from "./components/render.js?v=ux-1";
 
 const { hero, profile, atlas, ecosystemStory, productStory, principles } = portfolio;
 
@@ -12,10 +12,10 @@ app.innerHTML = `
       <span>Career Atlas</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#atlas">Atlas</a>
-      <a href="#case-studies">Work</a>
-      <a href="#how-i-work">Principles</a>
-      <a href="#contact">Contact</a>
+      <a href="#ecosystems-integrations">Ecosystems</a>
+      <a href="#products-owned">Products</a>
+      <a href="#how-i-work">How I work</a>
+      <a href="#contact">About</a>
     </nav>
   </header>
 
@@ -23,11 +23,15 @@ app.innerHTML = `
     <section class="hero section" id="top">
       <div class="hero-copy reveal">
         <p class="eyebrow">${hero.eyebrow}</p>
+        <p class="hero-focus">${hero.focus}</p>
         <h1>${hero.title}</h1>
         <p class="hero-intro">${hero.intro}</p>
         <div class="hero-actions">
           <a class="button button-primary" href="${hero.primaryCta.target}">${hero.primaryCta.label}</a>
           <a class="button button-secondary" href="${hero.secondaryCta.target}">${hero.secondaryCta.label}</a>
+        </div>
+        <div class="hero-evidence" aria-label="Career evidence at a glance">
+          ${hero.evidence.map((item) => `<div><strong>${item.value}</strong><span>${item.label}</span></div>`).join("")}
         </div>
       </div>
       <aside class="hero-signal reveal" aria-label="Career positioning summary">
@@ -70,24 +74,22 @@ app.innerHTML = `
       <div class="reveal">${renderAtlas(atlas)}</div>
     </section>
 
-    <section class="section story-section" id="case-studies">
-      <div class="story-anchor" id="ecosystems-integrations"></div>
+    <section class="section story-section" id="ecosystems-integrations">
       <div class="section-heading reveal">
         <p class="kicker">Territory 01</p>
         <h2>Ecosystems & Integrations</h2>
-        <p>Work that sits between customer demand, product strategy, engineering reality and external partner ecosystems.</p>
+        <div class="section-intro"><p>Work that sits between customer demand, product strategy, engineering reality and external partner ecosystems.</p><a href="#atlas">Back to atlas ↑</a></div>
       </div>
-      <div class="reveal">${renderEcosystemStory(ecosystemStory)}</div>
+      <div>${renderEcosystemStory(ecosystemStory)}</div>
     </section>
 
-    <section class="section story-section">
-      <div class="story-anchor" id="products-owned"></div>
+    <section class="section story-section" id="products-owned">
       <div class="section-heading reveal">
         <p class="kicker">Territory 02</p>
         <h2>Products I Owned</h2>
-        <p>Examples where I owned the product problem and operating model, not only the partnership around it.</p>
+        <div class="section-intro"><p>Customer-facing product areas and AI products owned from discovery through delivery, launch and iteration.</p><a href="#atlas">Back to atlas ↑</a></div>
       </div>
-      <div class="reveal">${renderProductStory(productStory)}</div>
+      <div>${renderProductStory(productStory)}</div>
     </section>
 
     <section class="section principles-section" id="how-i-work">
@@ -141,10 +143,26 @@ const observer = "IntersectionObserver" in window
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 })
+    }, { threshold: 0.04 })
   : null;
 
 document.querySelectorAll(".reveal").forEach((element) => {
   if (observer) observer.observe(element);
   else element.classList.add("is-visible");
 });
+
+const navigationLinks = [...document.querySelectorAll('.site-header nav a')];
+const navigationTargets = navigationLinks
+  .map((link) => ({ link, target: document.querySelector(link.getAttribute("href")) }))
+  .filter((item) => item.target);
+
+if ("IntersectionObserver" in window) {
+  const navigationObserver = new IntersectionObserver((entries) => {
+    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    navigationLinks.forEach((link) => link.removeAttribute("aria-current"));
+    const active = navigationTargets.find((item) => item.target === visible.target);
+    active?.link.setAttribute("aria-current", "location");
+  }, { rootMargin: "-20% 0px -65%", threshold: [0, .1, .3] });
+  navigationTargets.forEach((item) => navigationObserver.observe(item.target));
+}
