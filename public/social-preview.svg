@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f3efe8"/>
+  <circle cx="1010" cy="145" r="180" fill="none" stroke="#c7472c" stroke-opacity=".24" stroke-width="2"/>
+  <circle cx="1010" cy="145" r="105" fill="none" stroke="#1d211d" stroke-opacity=".2" stroke-width="2" stroke-dasharray="8 12"/>
+  <circle cx="1010" cy="145" r="13" fill="#c7472c"/>
+  <text x="85" y="130" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#c7472c">CAREER ATLAS</text>
+  <text x="85" y="245" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#1d211d">Products, partnerships</text>
+  <text x="85" y="328" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#1d211d">and ecosystems I’ve</text>
+  <text x="85" y="411" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#1d211d">helped build.</text>
+  <text x="85" y="535" font-family="Arial, sans-serif" font-size="28" fill="#64675f">Product · Technology · Customers · Partners</text>
+</svg>
