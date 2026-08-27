@@ -4,6 +4,13 @@ export const portfolio = {
     title: "Building products, partnerships & integrations that create real business impact.",
     intro:
       "I build across product, technology and partnerships — from core product areas and AI-powered products to complex integrations and strategic technology partnerships with market-leading companies. I take ideas from discovery through delivery and adoption, with a focus on measurable customer value and business growth.",
+    focus: "Product · Technology Partnerships · Integrations & APIs · AI · Business Growth",
+    evidence: [
+      { value: "9+ years", label: "across products, integrations and ecosystems" },
+      { value: "0 → 1 ×2", label: "technology ecosystems built from scratch" },
+      { value: "~60%", label: "of revenue from partnerships and integrations in one ecosystem" },
+      { value: "0 → launch", label: "AI Voice Agent built from a blank page" },
+    ],
     primaryCta: { label: "Explore my work", target: "#atlas" },
     secondaryCta: { label: "Contact me", target: "#contact" },
   },
