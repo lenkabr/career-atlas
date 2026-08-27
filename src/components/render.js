@@ -78,7 +78,15 @@ export function renderEcosystemStory(story) {
         ${chapterHeader(partnerships.number, partnerships.title, partnerships.intro)}
         <p class="ecosystem-evidence-label">${esc(partnerships.label)}</p>
         <div class="company-wall" role="list" aria-label="${esc(partnerships.label)}">
-          ${partnerships.companies.map((company) => `<span role="listitem">${esc(company)}</span>`).join("")}
+          ${partnerships.companies
+            .map(
+              (company) => `
+                <div class="company-logo" role="listitem">
+                  <img src="${esc(company.logo)}" alt="" aria-hidden="true" loading="lazy" />
+                  <span>${esc(company.name)}</span>
+                </div>`,
+            )
+            .join("")}
         </div>
         <p class="ecosystem-note">${esc(partnerships.note)}</p>
       </article>
