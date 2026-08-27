@@ -44,6 +44,86 @@ export function renderCaseStudy(study) {
   `;
 }
 
+const chapterHeader = (number, title, intro) => `
+  <header class="ecosystem-chapter-header">
+    <p class="ecosystem-chapter-number">${esc(number)}</p>
+    <div>
+      <h3>${esc(title)}</h3>
+      <p>${esc(intro)}</p>
+    </div>
+  </header>
+`;
+
+export function renderEcosystemStory(story) {
+  const { opening, partnerships, strategicCase, prioritization, growth } = story;
+
+  return `
+    <div class="ecosystem-story">
+      <article class="ecosystem-chapter ecosystem-opening">
+        ${chapterHeader(opening.number, opening.title, opening.intro)}
+        <div class="ecosystem-outcomes" aria-label="Selected ecosystem outcomes">
+          ${opening.outcomes.map((outcome) => `
+            <div class="ecosystem-outcome">
+              <strong>${esc(outcome.value)}</strong>
+              <span>${esc(outcome.label)}</span>
+            </div>
+          `).join("")}
+        </div>
+        <div class="ecosystem-narrative">
+          ${opening.paragraphs.map((paragraph) => `<p>${esc(paragraph)}</p>`).join("")}
+        </div>
+      </article>
+
+      <article class="ecosystem-chapter ecosystem-partnerships">
+        ${chapterHeader(partnerships.number, partnerships.title, partnerships.intro)}
+        <p class="ecosystem-evidence-label">${esc(partnerships.label)}</p>
+        <div class="company-wall" role="list" aria-label="${esc(partnerships.label)}">
+          ${partnerships.companies.map((company) => `<span role="listitem">${esc(company)}</span>`).join("")}
+        </div>
+        <p class="ecosystem-note">${esc(partnerships.note)}</p>
+      </article>
+
+      <article class="ecosystem-chapter ecosystem-strategic-case">
+        ${chapterHeader(strategicCase.number, strategicCase.title, strategicCase.intro)}
+        <ol class="partnership-path">
+          ${strategicCase.steps.map((step, index) => `
+            <li><span>0${index + 1}</span>${esc(step)}</li>
+          `).join("")}
+        </ol>
+        <div class="strategic-case-copy">
+          <p>${esc(strategicCase.detail)}</p>
+          <p class="strategic-case-outcome">${esc(strategicCase.outcome)}</p>
+        </div>
+        <p class="ecosystem-equation">${esc(strategicCase.lesson)}</p>
+      </article>
+
+      <article class="ecosystem-chapter ecosystem-prioritization">
+        ${chapterHeader(prioritization.number, prioritization.title, prioritization.intro)}
+        <p class="roadmap-equation">${esc(prioritization.equation)}</p>
+        <div class="decision-signals" role="list" aria-label="Integration prioritization signals">
+          ${prioritization.signals.map((signal, index) => `
+            <div role="listitem"><span>0${index + 1}</span><p>${esc(signal)}</p></div>
+          `).join("")}
+        </div>
+      </article>
+
+      <article class="ecosystem-chapter ecosystem-growth">
+        ${chapterHeader(growth.number, growth.title, growth.intro)}
+        <div class="growth-system">
+          ${growth.groups.map((group) => `
+            <section>
+              <h4>${esc(group.label)}</h4>
+              <ul>${group.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+            </section>
+          `).join("")}
+        </div>
+      </article>
+
+      <p class="ecosystem-closing">${esc(story.closing)}</p>
+    </div>
+  `;
+}
+
 export function renderPartnerGroups(groups) {
   return `
     <div class="partner-grid">
