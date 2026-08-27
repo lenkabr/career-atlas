@@ -16,7 +16,7 @@ export const portfolio = {
     location: "[Location]",
     email: "mailto:your-email@example.com",
     linkedin: "https://www.linkedin.com/in/your-profile",
-    cv: "/cv-placeholder.pdf",
+    cv: "./public/cv-placeholder.pdf",
     photoAlt: "Profile photo placeholder",
   },
 
