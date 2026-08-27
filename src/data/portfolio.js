@@ -12,11 +12,10 @@ export const portfolio = {
     name: "Lenka Brozmanova",
     role: "Product Management · Technology Partnerships · Ecosystem Strategy · Product Integrations & APIs",
     summary:
-      "Approximately nine years working with integrations, technology partners and product ecosystems, plus approximately two years of formal product-management experience in other areas. I’ve managed integrations from both sides of the partnership, worked across Product, Engineering, Customer Success and Sales, and built ecosystem processes from scratch.",
+      "9+ years building products, integrations, and technology ecosystems at the intersection of customer needs, technology, and business growth. I’ve owned integrations end-to-end and built business-oriented product partnerships that generated new revenue and brought new customers into the business. My experience spans APIs and technical integrations, core product areas such as voice reporting, and AI-powered products — from discovery and technical evaluation through development, launch, adoption, and optimization. I’ve also led a team and bring hands-on experience in product positioning and product marketing, giving me a strong understanding of what it takes not only to build the right product, but to successfully bring it to market. Throughout my career, I’ve worked across Engineering, Product, Sales, Customer Success, Marketing, and leadership, and I see strong cross-functional collaboration as fundamental to building products that customers adopt and businesses can grow around.",
     email: "mailto:brozmanova.lenk@gmail.com",
     linkedin: "https://www.linkedin.com/in/lenka-brozmanov%C3%A1-20b255a5",
     github: "https://github.com/lenkabr",
-    cv: "./public/cv-placeholder.pdf",
     photo: "./public/lenka-brozmanova.png",
     photoAlt: "Illustrated portrait of Lenka Brozmanova",
   },
