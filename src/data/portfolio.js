@@ -145,28 +145,63 @@ export const portfolio = {
       "I treat integrations as products and partnerships as growth systems — combining customer demand, technical execution and commercial strategy to build ecosystems that create measurable business value.",
   },
 
-  caseStudies: [
-    {
-      id: "voice-reporting",
-      section: "products-owned",
-      number: "02",
-      label: "Products I Owned",
-      title: "Owning the Voice Reporting product at FaceUp",
-      lede:
-        "Voice Reporting was an entire reporting channel I owned as a product at FaceUp — requiring coordination across product, engineering, customer needs and operational delivery.",
-      facts: [
-        { label: "Context", value: "FaceUp — Voice Reporting product." },
-        { label: "Problem", value: "[Add the specific user problem Voice Reporting was designed to solve.]" },
-        { label: "My ownership", value: "Owned Voice Reporting as a product. [Add verified detail about discovery, roadmap, delivery and operations.]" },
-        { label: "Users / personas", value: "[Add the primary buyer, admin and end-user personas.]" },
-        { label: "Teams & partners", value: "[Add relevant FaceUp teams and external providers or partners only when verified.]" },
-        { label: "Approach", value: "[Describe how you shaped the product, operating model and improvements.]" },
-        { label: "Decisions & trade-offs", value: "[Add key product, UX, technical or operational trade-offs.]" },
-        { label: "Outcome & evidence", value: "[Add verified adoption, customer, revenue, reliability or operational evidence.]" },
-        { label: "What I learned", value: "[Add what this taught you about owning a product beyond integrations.]" },
+  productStory: {
+    marketplace: {
+      number: "01",
+      title: "Making integrations discoverable and usable",
+      intro:
+        "I worked on customer-facing marketplaces and app stores, and on the in-product experience through which customers discover, understand and access integrations.",
+      questions: [
+        "How should customers discover and navigate integrations?",
+        "How should integrations be categorized and presented?",
+        "What does a customer need to know before connecting?",
+        "How should available and requested integrations work together?",
       ],
+      detail:
+        "The product challenge was to make the ecosystem feel like part of the product—not a separate directory. That meant connecting customer demand and roadmap decisions with clear discovery, useful information and a path toward adoption.",
+      collaboration: "Product · Engineering · CX · Marketing · Partnerships",
     },
-  ],
+    voiceReporting: {
+      number: "02",
+      title: "Owning Voice Reporting as a core product channel",
+      intro:
+        "At FaceUp, I owned Voice Reporting as a core reporting channel within the product—not as an isolated feature.",
+      stages: ["Discovery", "Requirements", "Prioritization", "UX & workflows", "Engineering", "Testing", "Launch", "Feedback", "Iteration"],
+      detail:
+        "I worked across the full product cycle: understanding customer and user needs, shaping workflows, prioritizing improvements, collaborating directly with Engineering and other teams, testing functionality, launching changes, collecting feedback and continuing to improve the experience.",
+      balance: ["User needs", "Product usability", "Technical constraints", "Business priorities"],
+    },
+    aiVoiceAgent: {
+      number: "03",
+      title: "Building an AI Voice Agent from absolute zero",
+      statement: "From blank page to shipped AI product.",
+      intro:
+        "I took an AI-powered Voice Agent from the earliest concept through customer launch rather than inheriting an existing product.",
+      stages: [
+        "Customer problem & opportunity",
+        "Discovery & use-case definition",
+        "Technology & solution evaluation",
+        "Workflow design",
+        "AI prompting & behavior design",
+        "Prototyping & experimentation",
+        "Engineering collaboration",
+        "Testing, quality & edge cases",
+        "Legal & launch readiness",
+        "Enablement & customer launch",
+        "Adoption, feedback & iteration",
+      ],
+      detail:
+        "Building an AI product required more than adding an AI interface. I had to determine where AI genuinely improved the experience, design how the agent should behave, evaluate unpredictable outputs, define appropriate guardrails and retain human judgment over what was shipped.",
+      principles: ["Useful, not decorative", "Designed behavior", "Tested uncertainty", "Explicit guardrails", "Human judgment"],
+    },
+    pattern: {
+      number: "04",
+      title: "The product pattern across all three",
+      stages: ["Understand the problem", "Validate the opportunity", "Define the experience", "Align business & technical constraints", "Build with Engineering", "Test", "Launch", "Measure", "Improve"],
+      closing:
+        "Different products, same ownership model: understand the real problem, make the trade-offs, work closely with Engineering, ship, learn from usage and keep improving.",
+    },
+  },
 
   partnerGroups: [
     {
