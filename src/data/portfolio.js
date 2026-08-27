@@ -120,8 +120,8 @@ export const portfolio = {
 
   principles: [
     "Own the outcome end to end",
-    "Translate between commercial and technical teams",
-    "Prioritize integrations by customer and business value",
+    "Bridge technical decisions and business outcomes",
+    "Prioritize integrations & features by customer value and business impact",
     "Treat launch as the midpoint, not the finish line",
     "Build scalable systems instead of repeatedly solving the same problem",
   ],
