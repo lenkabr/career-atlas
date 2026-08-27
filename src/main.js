@@ -1,7 +1,7 @@
-import { portfolio } from "./data/portfolio.js?v=atlas-1";
-import { renderAtlas, renderCaseStudy, renderPartnerGroups, renderPrinciples } from "./components/render.js";
+import { portfolio } from "./data/portfolio.js?v=ecosystem-1";
+import { renderAtlas, renderCaseStudy, renderEcosystemStory, renderPrinciples } from "./components/render.js?v=ecosystem-1";
 
-const { hero, profile, atlas, caseStudies, partnerGroups, principles } = portfolio;
+const { hero, profile, atlas, ecosystemStory, caseStudies, principles } = portfolio;
 
 const caseFor = (section) => caseStudies.filter((study) => study.section === section).map(renderCaseStudy).join("");
 
@@ -79,16 +79,7 @@ app.innerHTML = `
         <h2>Ecosystems & Integrations</h2>
         <p>Work that sits between customer demand, product strategy, engineering reality and external partner ecosystems.</p>
       </div>
-      <div class="reveal">${caseFor("ecosystems-integrations")}</div>
-    </section>
-
-    <section class="section partners-section" aria-labelledby="partners-title">
-      <div class="section-heading reveal">
-        <p class="kicker">Partner & platform view</p>
-        <h2 id="partners-title">The network around the product.</h2>
-        <p>A flexible view of the companies, platforms, customers and teams involved in ecosystem work. Placeholder labels are intentionally explicit until verified names are added.</p>
-      </div>
-      <div class="reveal">${renderPartnerGroups(partnerGroups)}</div>
+      <div class="reveal">${renderEcosystemStory(ecosystemStory)}</div>
     </section>
 
     <section class="section story-section">
