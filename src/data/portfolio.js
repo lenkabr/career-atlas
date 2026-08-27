@@ -1,9 +1,9 @@
 export const portfolio = {
   hero: {
     eyebrow: "Lenka Brozmanova · Career Atlas",
-    title: "Products, partnerships and ecosystems I’ve helped build.",
+    title: "Building products, partnerships, integrations & ecosystems that customers use and businesses grow from.",
     intro:
-      "I work where product, technology, customers and external partners meet — turning complex integrations, partner programs and operational systems into clear, useful products.",
+      "I build across product, technology and partnerships — from core product areas and AI-powered products to complex integrations and strategic technology partnerships with market-leading companies. I take ideas from discovery through delivery and adoption, with a focus on measurable customer value and business growth.",
     primaryCta: { label: "Explore my work", target: "#atlas" },
     secondaryCta: { label: "Contact me", target: "#contact" },
   },
