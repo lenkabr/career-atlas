@@ -1,9 +1,7 @@
-import { portfolio } from "./data/portfolio.js?v=ecosystem-2";
-import { renderAtlas, renderCaseStudy, renderEcosystemStory, renderPrinciples } from "./components/render.js?v=ecosystem-2";
+import { portfolio } from "./data/portfolio.js?v=products-1";
+import { renderAtlas, renderEcosystemStory, renderProductStory, renderPrinciples } from "./components/render.js?v=products-1";
 
-const { hero, profile, atlas, ecosystemStory, caseStudies, principles } = portfolio;
-
-const caseFor = (section) => caseStudies.filter((study) => study.section === section).map(renderCaseStudy).join("");
+const { hero, profile, atlas, ecosystemStory, productStory, principles } = portfolio;
 
 const app = document.querySelector("#app");
 
@@ -89,7 +87,7 @@ app.innerHTML = `
         <h2>Products I Owned</h2>
         <p>Examples where I owned the product problem and operating model, not only the partnership around it.</p>
       </div>
-      <div class="reveal">${caseFor("products-owned")}</div>
+      <div class="reveal">${renderProductStory(productStory)}</div>
     </section>
 
     <section class="section principles-section" id="how-i-work">
