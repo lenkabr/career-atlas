@@ -56,11 +56,11 @@ export const portfolio = {
       outcomes: [
         { value: "0 → 1", label: "Built from zero — twice" },
         { value: "~60%", label: "of revenue from technology partnerships & integrations in one ecosystem" },
-        { value: "3×", label: "the previous best quarterly result in another" },
+        { value: "~$30k", label: "in new business in the final quarter — about 3× the previous best" },
       ],
       paragraphs: [
         "At the first company, technology partnerships and integrations grew into a major commercial channel, contributing approximately 60% of revenue.",
-        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The ecosystem gained strong commercial traction and generated significant revenue. In my final quarter, results reached approximately 3× the previous best quarter.",
+        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The ecosystem was gaining its first meaningful commercial traction. In my final quarter, it generated approximately $30k in new business — around 3× the previous best quarter — with the growth engine only beginning to take hold.",
         "This was not simply partner relationship management. It meant understanding customer technology stacks and integration demand, identifying opportunities, building business cases, prioritizing integrations, working with Engineering, launching partnerships, enabling Sales and Customer Experience, driving adoption, co-selling and measuring commercial performance.",
       ],
     },
@@ -70,7 +70,19 @@ export const portfolio = {
       intro:
         "I’ve worked directly with major SaaS and technology companies across integrations, marketplace presence, joint GTM, co-marketing, referrals and co-selling, technical collaboration and ongoing ecosystem development.",
       label: "Selected technology companies I’ve worked with",
-      companies: ["Zendesk", "Front", "Help Scout", "Freshworks", "Paylocity", "BambooHR", "Rippling", "Microsoft", "ADP", "Intercom", "Salesforce"],
+      companies: [
+        { name: "Zendesk", logo: "./public/logos/zendesk.svg" },
+        { name: "Front", logo: "./public/logos/front.svg" },
+        { name: "Help Scout", logo: "./public/logos/help-scout.svg" },
+        { name: "Freshworks", logo: "./public/logos/freshworks.svg" },
+        { name: "Paylocity", logo: "./public/logos/paylocity.svg" },
+        { name: "BambooHR", logo: "./public/logos/bamboohr.svg" },
+        { name: "Rippling", logo: "./public/logos/rippling.svg" },
+        { name: "Microsoft", logo: "./public/logos/microsoft.svg" },
+        { name: "ADP", logo: "./public/logos/adp.svg" },
+        { name: "Intercom", logo: "./public/logos/intercom.svg" },
+        { name: "Salesforce", logo: "./public/logos/salesforce.svg" },
+      ],
       note: "Selected relationships shown as evidence of experience; no endorsement is implied.",
     },
     strategicCase: {
