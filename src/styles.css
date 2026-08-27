@@ -121,7 +121,7 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 
 .about-section { display: grid; grid-template-columns: .6fr 1.4fr; gap: 7vw; border-top: 1px solid var(--line); }
 .profile-frame { aspect-ratio: 4 / 5; max-width: 360px; width: 100%; border: 1px solid var(--line-strong); border-radius: var(--radius); display: grid; place-items: center; color: var(--muted); background: linear-gradient(145deg, rgba(255,255,255,.42), rgba(199,71,44,.04)); position: relative; overflow: hidden; }
-.profile-frame::after { content: ""; position: absolute; width: 70%; aspect-ratio: 1; border: 1px solid var(--line); border-radius: 50%; bottom: -25%; right: -20%; }
+.profile-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-copy h2 { margin-bottom: .3rem; }
 .role { color: var(--accent); font-weight: 600; }
 .about-copy > p:not(.kicker):not(.role) { max-width: 680px; font-size: 1.08rem; color: var(--muted); }
