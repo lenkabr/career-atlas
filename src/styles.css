@@ -73,11 +73,12 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 .impact-map { width: min(430px, 100%); height: auto; overflow: visible; }
 .impact-connections { fill: none; stroke: var(--line-strong); stroke-width: 1; vector-effect: non-scaling-stroke; }
 .impact-connections path:not(:first-child) { stroke: var(--line); }
-.impact-node circle { fill: var(--paper); stroke: var(--line-strong); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.impact-node text, .impact-label { fill: var(--ink); font-family: "DM Sans", system-ui, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-anchor: middle; }
-.impact-node-technology text { font-size: 8px; letter-spacing: .8px; }
+.impact-node circle { fill: var(--accent); stroke: var(--accent-dark); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.impact-node text, .impact-label { fill: white; font-family: "DM Sans", system-ui, sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 1.15px; text-anchor: middle; }
+.impact-node-technology text { font-size: 8px; letter-spacing: .7px; }
+.impact-node-customers text { font-size: 9.5px; }
 .impact-core { fill: var(--accent); }
-.impact-label { fill: var(--accent); font-size: 8px; letter-spacing: 1.35px; }
+.impact-label { fill: var(--accent); font-size: 8px; font-weight: 700; letter-spacing: 1.35px; }
 
 .atlas-section, .partners-section, .principles-section { border-top: 1px solid var(--line); }
 .section-heading { display: grid; grid-template-columns: .75fr 1.4fr; gap: 4vw; align-items: end; margin-bottom: 4rem; }
