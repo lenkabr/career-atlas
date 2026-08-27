@@ -108,7 +108,6 @@ app.innerHTML = `
           <a class="button button-primary" href="${profile.email}">Email me</a>
           <a class="text-link" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a class="text-link" href="${profile.github}" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a class="text-link" href="${profile.cv}">Download CV ↓</a>
         </div>
       </div>
     </section>
