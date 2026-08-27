@@ -33,18 +33,33 @@ app.innerHTML = `
         </div>
       </div>
       <aside class="hero-signal reveal" aria-label="Career positioning summary">
-        <div class="signal-orbit" aria-hidden="true">
-          <span class="orbit orbit-a"></span>
-          <span class="orbit orbit-b"></span>
-          <span class="orbit-core"></span>
-        </div>
-        <p class="signal-label">Operating at the intersection of</p>
-        <ul>
-          <li>Product</li>
-          <li>Technology</li>
-          <li>Customers</li>
-          <li>Partners</li>
-        </ul>
+        <svg class="impact-map" viewBox="0 0 420 420" role="img" aria-labelledby="impact-map-title impact-map-desc">
+          <title id="impact-map-title">Four disciplines connected through business impact</title>
+          <desc id="impact-map-desc">Product, technology, customers and partners connect to each other and meet at business impact.</desc>
+          <g class="impact-connections">
+            <path d="M210 54 Q330 70 366 210 Q330 350 210 366 Q90 350 54 210 Q90 70 210 54Z" />
+            <path d="M210 86 L210 203 M334 210 L217 210 M210 334 L210 217 M86 210 L203 210" />
+            <path d="M210 86 Q280 120 334 210 M334 210 Q278 286 210 334 M210 334 Q136 282 86 210 M86 210 Q140 126 210 86" />
+          </g>
+          <g class="impact-node impact-node-product">
+            <circle cx="210" cy="54" r="42" />
+            <text x="210" y="58">PRODUCT</text>
+          </g>
+          <g class="impact-node impact-node-technology">
+            <circle cx="366" cy="210" r="42" />
+            <text x="366" y="214">TECHNOLOGY</text>
+          </g>
+          <g class="impact-node impact-node-customers">
+            <circle cx="210" cy="366" r="42" />
+            <text x="210" y="370">CUSTOMERS</text>
+          </g>
+          <g class="impact-node impact-node-partners">
+            <circle cx="54" cy="210" r="42" />
+            <text x="54" y="214">PARTNERS</text>
+          </g>
+          <circle class="impact-core" cx="210" cy="210" r="8" />
+          <text class="impact-label" x="210" y="237">BUSINESS IMPACT</text>
+        </svg>
       </aside>
     </section>
 
