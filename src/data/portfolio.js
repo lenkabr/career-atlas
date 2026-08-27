@@ -47,27 +47,93 @@ export const portfolio = {
     },
   ],
 
-  caseStudies: [
-    {
-      id: "integration-ecosystem",
-      section: "ecosystems-integrations",
+  ecosystemStory: {
+    opening: {
       number: "01",
-      label: "Ecosystems & Integrations",
-      title: "Building and growing an integration ecosystem",
-      lede:
-        "A case study about creating the product, partnership and operating foundations required to make integrations a repeatable growth capability rather than a collection of one-off projects.",
-      facts: [
-        { label: "Context", value: "[Add company stage, product context and starting point.]" },
-        { label: "Problem", value: "[Describe the customer, product or commercial problem the ecosystem needed to solve.]" },
-        { label: "My ownership", value: "[Describe the parts of strategy, discovery, delivery, partner management and operations you directly owned.]" },
-        { label: "Users / personas", value: "[Add the customer and internal personas affected.]" },
-        { label: "Teams & partners", value: "[Add relevant internal teams and external partner types. Do not add names until confirmed.]" },
-        { label: "Approach", value: "[Describe how you prioritized opportunities, shaped integrations, coordinated delivery and created repeatable processes.]" },
-        { label: "Decisions & trade-offs", value: "[Add 2–3 important decisions, constraints or trade-offs.]" },
-        { label: "Outcome & evidence", value: "[Add verified adoption, pipeline, customer, revenue or operational evidence.]" },
-        { label: "What I learned", value: "[Add the strongest lesson you would carry into the next ecosystem role.]" },
+      title: "Building ecosystems from zero",
+      intro:
+        "I have built technology partnership and integration ecosystems from scratch at two different SaaS companies — turning customer demand into repeatable product and commercial channels.",
+      outcomes: [
+        { value: "0 → 1", label: "Built from zero — twice" },
+        { value: "~60%", label: "of revenue from technology partnerships & integrations in one ecosystem" },
+        { value: "3×", label: "the previous best quarterly result in another" },
+      ],
+      paragraphs: [
+        "At the first company, technology partnerships and integrations grew into a major commercial channel, contributing approximately 60% of revenue.",
+        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The ecosystem gained strong commercial traction and generated significant revenue. In my final quarter, results reached approximately 3× the previous best quarter.",
+        "This was not simply partner relationship management. It meant understanding customer technology stacks and integration demand, identifying opportunities, building business cases, prioritizing integrations, working with Engineering, launching partnerships, enabling Sales and Customer Experience, driving adoption, co-selling and measuring commercial performance.",
       ],
     },
+    partnerships: {
+      number: "02",
+      title: "Strategic technology partnerships",
+      intro:
+        "I’ve worked directly with major SaaS and technology companies across integrations, marketplace presence, joint GTM, co-marketing, referrals and co-selling, technical collaboration and ongoing ecosystem development.",
+      label: "Selected technology companies I’ve worked with",
+      companies: ["Zendesk", "Front", "Help Scout", "Freshworks", "Paylocity", "BambooHR", "Rippling", "Microsoft", "ADP", "Intercom", "Salesforce"],
+      note: "Selected relationships shown as evidence of experience; no endorsement is implied.",
+    },
+    strategicCase: {
+      number: "03",
+      title: "Turning a difficult integration into a strategic partnership",
+      intro:
+        "A strategically important, market-leading technology company initially showed little engagement despite strong customer demand for the integration.",
+      steps: [
+        "Customer and commercial signals",
+        "Evidence-backed business case",
+        "Technical and commercial alignment",
+        "Integration development",
+        "Partnership activation",
+      ],
+      detail:
+        "I identified the opportunity, built the business case, continued developing the relationship and aligned technical and commercial requirements. The integration was complex and took significant time to bring together, requiring persistence across technical, commercial and organizational dependencies.",
+      outcome:
+        "By launch, the dynamic had changed: the partner was actively engaged and eager to launch, market and co-sell the combined solution.",
+      lesson:
+        "Customer evidence + business case + technical execution + relationship building can turn an initially unavailable integration into a strategic growth opportunity.",
+    },
+    prioritization: {
+      number: "04",
+      title: "Prioritizing what deserves to be built",
+      intro:
+        "I don’t prioritize integrations simply because a partner asks or one customer requests them. I combine evidence to allocate Engineering resources where they can create the most value.",
+      equation: "Integration roadmap = customer value × business impact × strategic fit × technical feasibility",
+      signals: [
+        "Customer integration requests",
+        "Customer technology-stack data",
+        "Prospect, Sales and CX signals",
+        "Potential customer and revenue impact",
+        "Strategic partner value",
+        "Technical feasibility and development cost",
+        "Adoption potential",
+        "Broader ecosystem fit",
+      ],
+    },
+    growth: {
+      number: "05",
+      title: "Launch is where ecosystem growth starts",
+      intro:
+        "Shipping the integration is the midpoint. Adoption, distribution and revenue determine whether the ecosystem actually works.",
+      groups: [
+        {
+          label: "Enable & distribute",
+          items: ["Partner and internal enablement", "Marketplace listings", "Integration pages and documentation", "Customer activation and request follow-up"],
+        },
+        {
+          label: "Create demand",
+          items: ["Joint GTM and co-marketing", "Referrals and co-selling", "Partner-sourced and partner-influenced pipeline", "Direct marketplace lead tracking"],
+        },
+        {
+          label: "Measure & optimize",
+          items: ["Direct and indirect attribution", "Integration adoption and usage", "Pipeline forecasting", "Partner performance and ROI", "Invest, expand or deprioritize"],
+        },
+      ],
+    },
+    closing:
+      "I treat integrations as products and partnerships as growth systems — combining customer demand, technical execution and commercial strategy to build ecosystems that create measurable business value.",
+  },
+
+  caseStudies: [
     {
       id: "voice-reporting",
       section: "products-owned",
