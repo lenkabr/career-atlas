@@ -132,6 +132,72 @@ export function renderEcosystemStory(story) {
   `;
 }
 
+export function renderProductStory(story) {
+  const { marketplace, voiceReporting, aiVoiceAgent, pattern } = story;
+  return `
+    <div class="product-story">
+      <article class="product-chapter product-marketplace">
+        ${chapterHeader(marketplace.number, marketplace.title, marketplace.intro)}
+        <div class="product-split">
+          <div class="marketplace-ui" aria-label="Conceptual integration marketplace interface">
+            <div class="marketplace-toolbar"><span>INTEGRATIONS</span><span class="marketplace-search">Search the marketplace</span></div>
+            <div class="marketplace-categories"><span>All</span><span>Customer support</span><span>HR & people</span><span>Productivity</span></div>
+            <div class="marketplace-cards">
+              <div><i></i><strong>Available integration</strong><small>What it does · setup · requirements</small></div>
+              <div><i></i><strong>Available integration</strong><small>Use case · value · connection path</small></div>
+              <div class="marketplace-request"><i></i><strong>Request an integration</strong><small>Demand becomes a roadmap signal</small></div>
+            </div>
+          </div>
+          <div class="product-copy">
+            <p>${esc(marketplace.detail)}</p>
+            <ul class="product-questions">${marketplace.questions.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+            <p class="product-collaboration">${esc(marketplace.collaboration)}</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-chapter product-voice">
+        ${chapterHeader(voiceReporting.number, voiceReporting.title, voiceReporting.intro)}
+        <div class="voice-flow" aria-label="Voice Reporting product workflow">
+          <div class="voice-call"><span class="voice-pulse" aria-hidden="true"></span><strong>VOICE</strong><small>Core reporting channel</small></div>
+          <div class="voice-route" aria-hidden="true"></div>
+          <div class="voice-workflow">
+            ${voiceReporting.stages.map((stage, index) => `<span><b>${String(index + 1).padStart(2, "0")}</b>${esc(stage)}</span>`).join("")}
+          </div>
+        </div>
+        <div class="product-detail-row">
+          <p>${esc(voiceReporting.detail)}</p>
+          <div class="product-balance" aria-label="Product considerations">${voiceReporting.balance.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
+        </div>
+      </article>
+
+      <article class="product-chapter product-ai">
+        <p class="ai-statement">${esc(aiVoiceAgent.statement)}</p>
+        ${chapterHeader(aiVoiceAgent.number, aiVoiceAgent.title, aiVoiceAgent.intro)}
+        <div class="ai-product-visual">
+          <div class="ai-conversation" aria-label="Conceptual AI Voice Agent interaction">
+            <div class="ai-status"><span></span> AI VOICE AGENT · LIVE</div>
+            <p class="ai-user">Customer speaks</p>
+            <div class="ai-wave" aria-hidden="true">||||||||||||||||</div>
+            <p class="ai-agent">Agent understands context, responds and follows the designed workflow.</p>
+            <div class="ai-review"><span>QUALITY CHECK</span><span>GUARDRAILS</span><span>HUMAN JUDGMENT</span></div>
+          </div>
+          <ol class="ai-journey">${aiVoiceAgent.stages.map((stage, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span>${esc(stage)}</li>`).join("")}</ol>
+        </div>
+        <div class="ai-detail">
+          <p>${esc(aiVoiceAgent.detail)}</p>
+          <div class="ai-principles">${aiVoiceAgent.principles.map((item) => `<span>${esc(item)}</span>`).join("")}</div>
+        </div>
+      </article>
+
+      <article class="product-chapter product-pattern">
+        ${chapterHeader(pattern.number, pattern.title, "Different product contexts, one repeatable approach to ownership.")}
+        <ol class="ownership-model">${pattern.stages.map((stage, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span>${esc(stage)}</li>`).join("")}</ol>
+      </article>
+      <p class="product-closing">${esc(pattern.closing)}</p>
+    </div>`;
+}
+
 export function renderPartnerGroups(groups) {
   return `
     <div class="partner-grid">
