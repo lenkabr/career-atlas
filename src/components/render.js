@@ -59,7 +59,14 @@ export function renderEcosystemStory(story) {
 
   return `
     <div class="ecosystem-story">
-      <article class="ecosystem-chapter ecosystem-opening">
+      <nav class="chapter-index" aria-label="Ecosystems and integrations chapters">
+        <a href="#ecosystem-zero"><span>01</span>Built from zero</a>
+        <a href="#technology-partnerships"><span>02</span>Partner portfolio</a>
+        <a href="#strategic-integration"><span>03</span>Strategic integration</a>
+        <a href="#integration-prioritization"><span>04</span>Prioritization</a>
+        <a href="#ecosystem-growth"><span>05</span>Adoption & growth</a>
+      </nav>
+      <article class="ecosystem-chapter ecosystem-opening" id="ecosystem-zero">
         ${chapterHeader(opening.number, opening.title, opening.intro)}
         <div class="ecosystem-outcomes" aria-label="Selected ecosystem outcomes">
           ${opening.outcomes.map((outcome) => `
@@ -74,7 +81,7 @@ export function renderEcosystemStory(story) {
         </div>
       </article>
 
-      <article class="ecosystem-chapter ecosystem-partnerships">
+      <article class="ecosystem-chapter ecosystem-partnerships" id="technology-partnerships">
         ${chapterHeader(partnerships.number, partnerships.title, partnerships.intro)}
         <p class="ecosystem-evidence-label">${esc(partnerships.label)}</p>
         <div class="company-wall" role="list" aria-label="${esc(partnerships.label)}">
@@ -91,7 +98,7 @@ export function renderEcosystemStory(story) {
         <p class="ecosystem-note">${esc(partnerships.note)}</p>
       </article>
 
-      <article class="ecosystem-chapter ecosystem-strategic-case">
+      <article class="ecosystem-chapter ecosystem-strategic-case" id="strategic-integration">
         ${chapterHeader(strategicCase.number, strategicCase.title, strategicCase.intro)}
         <ol class="partnership-path">
           ${strategicCase.steps.map((step, index) => `
@@ -105,7 +112,7 @@ export function renderEcosystemStory(story) {
         <p class="ecosystem-equation">${esc(strategicCase.lesson)}</p>
       </article>
 
-      <article class="ecosystem-chapter ecosystem-prioritization">
+      <article class="ecosystem-chapter ecosystem-prioritization" id="integration-prioritization">
         ${chapterHeader(prioritization.number, prioritization.title, prioritization.intro)}
         <p class="roadmap-equation">${esc(prioritization.equation)}</p>
         <div class="decision-signals" role="list" aria-label="Integration prioritization signals">
@@ -115,7 +122,7 @@ export function renderEcosystemStory(story) {
         </div>
       </article>
 
-      <article class="ecosystem-chapter ecosystem-growth">
+      <article class="ecosystem-chapter ecosystem-growth" id="ecosystem-growth">
         ${chapterHeader(growth.number, growth.title, growth.intro)}
         <div class="growth-system">
           ${growth.groups.map((group) => `
@@ -136,7 +143,13 @@ export function renderProductStory(story) {
   const { marketplace, voiceReporting, aiVoiceAgent, pattern } = story;
   return `
     <div class="product-story">
-      <article class="product-chapter product-marketplace">
+      <nav class="chapter-index chapter-index-products" aria-label="Products I Owned chapters">
+        <a href="#marketplace-product"><span>01</span>Marketplace UX</a>
+        <a href="#voice-reporting-product"><span>02</span>Voice Reporting</a>
+        <a href="#ai-voice-agent"><span>03</span>AI Voice Agent</a>
+        <a href="#product-ownership-model"><span>04</span>Ownership model</a>
+      </nav>
+      <article class="product-chapter product-marketplace" id="marketplace-product">
         ${chapterHeader(marketplace.number, marketplace.title, marketplace.intro)}
         <div class="product-split">
           <div class="marketplace-ui" aria-label="Conceptual integration marketplace interface">
@@ -156,7 +169,7 @@ export function renderProductStory(story) {
         </div>
       </article>
 
-      <article class="product-chapter product-voice">
+      <article class="product-chapter product-voice" id="voice-reporting-product">
         ${chapterHeader(voiceReporting.number, voiceReporting.title, voiceReporting.intro)}
         <div class="voice-flow" aria-label="Voice Reporting product workflow">
           <div class="voice-call"><span class="voice-pulse" aria-hidden="true"></span><strong>VOICE</strong><small>Core reporting channel</small></div>
@@ -171,7 +184,7 @@ export function renderProductStory(story) {
         </div>
       </article>
 
-      <article class="product-chapter product-ai">
+      <article class="product-chapter product-ai" id="ai-voice-agent">
         <p class="ai-statement">${esc(aiVoiceAgent.statement)}</p>
         ${chapterHeader(aiVoiceAgent.number, aiVoiceAgent.title, aiVoiceAgent.intro)}
         <div class="ai-product-visual">
@@ -190,7 +203,7 @@ export function renderProductStory(story) {
         </div>
       </article>
 
-      <article class="product-chapter product-pattern">
+      <article class="product-chapter product-pattern" id="product-ownership-model">
         ${chapterHeader(pattern.number, pattern.title, "Different product contexts, one repeatable approach to ownership.")}
         <ol class="ownership-model">${pattern.stages.map((stage, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span>${esc(stage)}</li>`).join("")}</ol>
       </article>
