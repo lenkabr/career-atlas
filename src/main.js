@@ -96,8 +96,8 @@ app.innerHTML = `
     </section>
 
     <section class="section about-section" id="contact">
-      <div class="profile-frame reveal" aria-label="Profile photo placeholder">
-        <span>Profile photo</span>
+      <div class="profile-frame reveal">
+        <img src="${profile.photo}" alt="${profile.photoAlt}" />
       </div>
       <div class="about-copy reveal">
         <p class="kicker">About & contact</p>
@@ -107,6 +107,7 @@ app.innerHTML = `
         <div class="contact-actions">
           <a class="button button-primary" href="${profile.email}">Email me</a>
           <a class="text-link" href="${profile.linkedin}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="text-link" href="${profile.github}" target="_blank" rel="noreferrer">GitHub ↗</a>
           <a class="text-link" href="${profile.cv}">Download CV ↓</a>
         </div>
       </div>
