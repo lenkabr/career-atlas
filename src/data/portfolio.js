@@ -26,7 +26,7 @@ export const portfolio = {
       index: "01",
       title: "Ecosystems & Integrations",
       description:
-        "Integration strategy, technical partnerships, platform relationships and the operating systems behind them.",
+        "Integration strategy, strategic technology partnerships, APIs and the ecosystems and operating systems behind them.",
       target: "#ecosystems-integrations",
     },
     {
@@ -34,7 +34,7 @@ export const portfolio = {
       index: "02",
       title: "Products I Owned",
       description:
-        "Product ownership beyond integrations — including Voice Reporting as a full reporting channel at FaceUp.",
+        "Core product areas and AI-powered products — from discovery and technical evaluation through delivery, launch and adoption.",
       target: "#products-owned",
     },
     {
@@ -42,7 +42,7 @@ export const portfolio = {
       index: "03",
       title: "How I Work",
       description:
-        "The principles I use to connect customer value, commercial reality and technical execution.",
+        "The principles I use to connect customer value, business impact and technical execution.",
       target: "#how-i-work",
     },
   ],
