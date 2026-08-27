@@ -1,4 +1,4 @@
-import { portfolio } from "./data/portfolio.js?v=principles-1";
+import { portfolio } from "./data/portfolio.js?v=atlas-1";
 import { renderAtlas, renderCaseStudy, renderPartnerGroups, renderPrinciples } from "./components/render.js";
 
 const { hero, profile, atlas, caseStudies, partnerGroups, principles } = portfolio;
@@ -67,7 +67,7 @@ app.innerHTML = `
       <div class="section-heading reveal">
         <p class="kicker">The atlas</p>
         <h2>Three territories. One connected career.</h2>
-        <p>Choose a territory to move through the story. This is not a timeline — it is a view of the systems, products and decisions I’ve owned.</p>
+        <p><span class="editorial-highlight">Choose a territory to move through the story. This is not a timeline — it is a view of the systems, products and decisions I’ve owned.</span></p>
       </div>
       <div class="reveal">${renderAtlas(atlas)}</div>
     </section>
