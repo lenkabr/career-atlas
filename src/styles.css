@@ -113,7 +113,9 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 .ecosystem-narrative p { margin: 0; }
 .ecosystem-evidence-label { color: var(--accent); text-transform: uppercase; letter-spacing: .11em; font-size: .75rem; font-weight: 700; margin-bottom: 1.4rem; }
 .company-wall { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line-strong); border-left: 1px solid var(--line); }
-.company-wall span { min-height: 112px; padding: 1.3rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; place-items: center; text-align: center; color: #4b4e48; font-family: "Libre Franklin", sans-serif; font-size: clamp(.9rem, 1.4vw, 1.18rem); font-weight: 600; letter-spacing: -.025em; filter: grayscale(1); }
+.company-logo { min-height: 132px; padding: 1.3rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .8rem; text-align: center; color: #4b4e48; }
+.company-logo img { width: auto; max-width: 112px; height: 38px; object-fit: contain; filter: grayscale(1); opacity: .82; }
+.company-logo span { font-family: "Libre Franklin", sans-serif; font-size: clamp(.78rem, 1.15vw, .95rem); font-weight: 600; letter-spacing: -.015em; }
 .ecosystem-note { color: var(--muted); font-size: .78rem; margin: 1rem 0 0; }
 .partnership-path { list-style: none; padding: 0; margin: 0 0 3rem; display: grid; grid-template-columns: repeat(5, 1fr); border-block: 1px solid var(--line-strong); }
 .partnership-path li { min-height: 150px; padding: 1.4rem; border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: space-between; font-weight: 600; line-height: 1.3; }

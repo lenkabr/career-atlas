@@ -1,5 +1,5 @@
-import { portfolio } from "./data/portfolio.js?v=ecosystem-1";
-import { renderAtlas, renderCaseStudy, renderEcosystemStory, renderPrinciples } from "./components/render.js?v=ecosystem-1";
+import { portfolio } from "./data/portfolio.js?v=ecosystem-2";
+import { renderAtlas, renderCaseStudy, renderEcosystemStory, renderPrinciples } from "./components/render.js?v=ecosystem-2";
 
 const { hero, profile, atlas, ecosystemStory, caseStudies, principles } = portfolio;
 
