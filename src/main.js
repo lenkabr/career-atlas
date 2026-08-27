@@ -1,4 +1,4 @@
-import { portfolio } from "./data/portfolio.js";
+import { portfolio } from "./data/portfolio.js?v=hero-2";
 import { renderAtlas, renderCaseStudy, renderPartnerGroups, renderPrinciples } from "./components/render.js";
 
 const { hero, profile, atlas, caseStudies, partnerGroups, principles } = portfolio;
