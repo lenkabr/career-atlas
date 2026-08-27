@@ -67,7 +67,7 @@ app.innerHTML = `
       <div class="section-heading reveal">
         <p class="kicker">The atlas</p>
         <h2>Three territories. One connected career.</h2>
-        <p><span class="editorial-highlight">Choose a territory to move through the story. This is not a timeline — it is a view of the systems, products and decisions I’ve owned.</span></p>
+        <p>Choose a territory to move through the story. This is not a timeline — it is a view of the systems, products and decisions I’ve owned.</p>
       </div>
       <div class="reveal">${renderAtlas(atlas)}</div>
     </section>
