@@ -1,5 +1,5 @@
-import { portfolio } from "./data/portfolio.js?v=ux-1";
-import { renderAtlas, renderEcosystemStory, renderProductStory, renderPrinciples } from "./components/render.js?v=ux-1";
+import { portfolio } from "./data/portfolio.js?v=nav-1";
+import { renderAtlas, renderEcosystemStory, renderProductStory, renderPrinciples } from "./components/render.js?v=nav-1";
 
 const { hero, profile, atlas, ecosystemStory, productStory, principles } = portfolio;
 
@@ -12,10 +12,11 @@ app.innerHTML = `
       <span>Career Atlas</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#ecosystems-integrations">Ecosystems</a>
+      <a href="#atlas">Atlas overview</a>
+      <a href="#ecosystems-integrations">Ecosystems & Integrations</a>
       <a href="#products-owned">Products</a>
-      <a href="#how-i-work">How I work</a>
-      <a href="#contact">About</a>
+      <a href="#how-i-work">How I Work</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 

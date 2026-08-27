@@ -52,7 +52,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 }
 .brand { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; font-weight: 700; letter-spacing: -.02em; }
 .brand-mark { width: 34px; height: 34px; border: 1px solid var(--line-strong); border-radius: 50%; display: grid; place-items: center; font-size: .7rem; color: var(--accent); }
-nav { display: flex; gap: 1.4rem; }
+nav { display: flex; gap: 1.15rem; }
 nav a { text-decoration: none; color: var(--muted); font-size: .92rem; padding: .35rem 0; border-bottom: 2px solid transparent; }
 nav a:hover, nav a[aria-current="location"] { color: var(--ink); border-bottom-color: var(--accent); }
 
@@ -261,7 +261,7 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 @media (max-width: 820px) {
   .site-header { min-height: 72px; gap: 1rem; overflow: hidden; }
   .brand > span:last-child { display: none; }
-  nav { min-width: 0; gap: 1rem; overflow-x: auto; scrollbar-width: none; }
+  nav { min-width: 0; gap: .9rem; overflow-x: auto; scrollbar-width: none; }
   nav::-webkit-scrollbar { display: none; }
   nav a { white-space: nowrap; font-size: .78rem; }
   .section { padding: 78px 0; }
