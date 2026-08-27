@@ -1,6 +1,6 @@
 export const portfolio = {
   hero: {
-    eyebrow: "Career Atlas",
+    eyebrow: "Lenka Brozmanova · Career Atlas",
     title: "Products, partnerships and ecosystems I’ve helped build.",
     intro:
       "I work where product, technology, customers and external partners meet — turning complex integrations, partner programs and operational systems into clear, useful products.",
@@ -9,15 +9,16 @@ export const portfolio = {
   },
 
   profile: {
-    name: "[Your name]",
-    role: "Technology Partnerships & Product",
+    name: "Lenka Brozmanova",
+    role: "Product Management · Technology Partnerships · Ecosystem Strategy · Product Integrations & APIs",
     summary:
       "Approximately nine years working with integrations, technology partners and product ecosystems, plus approximately two years of formal product-management experience in other areas. I’ve managed integrations from both sides of the partnership, worked across Product, Engineering, Customer Success and Sales, and built ecosystem processes from scratch.",
-    location: "[Location]",
-    email: "mailto:your-email@example.com",
-    linkedin: "https://www.linkedin.com/in/your-profile",
+    email: "mailto:brozmanova.lenk@gmail.com",
+    linkedin: "https://www.linkedin.com/in/lenka-brozmanov%C3%A1-20b255a5",
+    github: "https://github.com/lenkabr",
     cv: "./public/cv-placeholder.pdf",
-    photoAlt: "Profile photo placeholder",
+    photo: "./public/lenka-brozmanova.png",
+    photoAlt: "Illustrated portrait of Lenka Brozmanova",
   },
 
   atlas: [
