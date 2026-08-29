@@ -86,7 +86,7 @@ app.innerHTML = `
       <div class="section-heading reveal">
         <p class="kicker">Territory 01</p>
         <h2>Ecosystems & Integrations</h2>
-        <div class="section-intro"><p>Work that sits between customer demand, product strategy, engineering reality and external partner ecosystems.</p><a href="#atlas">Back to atlas ↑</a></div>
+        <div class="section-intro"><p>Building technology partnerships and integrations that connect customer needs, product strategy, technical execution and business growth.</p><a href="#atlas">Back to atlas ↑</a></div>
       </div>
       <div>${renderEcosystemStory(ecosystemStory)}</div>
     </section>
