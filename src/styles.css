@@ -239,7 +239,8 @@ h3 { font-size: clamp(1.35rem, 2.2vw, 2rem); }
 
 .principles-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line-strong); }
 .atlas-section .section-heading > p:last-child,
-.principles-section .section-heading > p:last-child { background: var(--accent); color: white; padding: 1.35rem 1.5rem; border-radius: 16px; box-shadow: 0 14px 34px rgba(141, 44, 28, .14); }
+.principles-section .section-heading > p:last-child,
+.story-section .section-intro > p { background: var(--accent); color: white; padding: 1.35rem 1.5rem; border-radius: 16px; box-shadow: 0 14px 34px rgba(141, 44, 28, .14); }
 .principles-list li { display: grid; grid-template-columns: 90px 1fr; gap: 1rem; align-items: center; border-bottom: 1px solid var(--line); padding: 1.6rem 0; }
 .principles-list span { color: var(--accent); font-weight: 700; }
 .principles-list p { font-family: "Libre Franklin", sans-serif; font-size: clamp(1.35rem, 2.8vw, 2.5rem); letter-spacing: -.035em; margin: 0; }
