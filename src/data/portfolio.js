@@ -63,11 +63,11 @@ export const portfolio = {
       outcomes: [
         { value: "0 → 1", label: "Built from zero — twice" },
         { value: "~60%", label: "of total company ARR generated through technology partnerships and integrations — representing hundreds of thousands in recurring revenue" },
-        { value: "0 → ~20%", label: "of the company’s total qualified pipeline generated through technology partners, alongside newly won business" },
+        { value: "0 → 3", label: "technology partners actively sourcing qualified pipeline and generating significant new business — with a fourth ready for launch" },
       ],
       paragraphs: [
         "At the first company, technology partnerships and integrations grew into a major commercial channel, contributing approximately 60% of total company ARR — representing hundreds of thousands in recurring revenue.",
-        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The program grew from zero into a meaningful source of qualified pipeline and newly won business. By my final quarter, technology partners contributed approximately 20% of the company’s total qualified pipeline, with the growth engine still gaining momentum.",
+        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The program grew from zero to three technology partners actively sourcing qualified pipeline and generating significant new business. A fourth partner, with approximately 30% joint-customer overlap, was ready for launch with significant pipeline forecast and a co-selling motion prepared — while the broader growth engine was still gaining momentum.",
         "This was not simply partner relationship management. It meant understanding customer technology stacks and integration demand, identifying opportunities, building business cases, prioritizing integrations, working with Engineering, launching partnerships, enabling Sales and Customer Experience, driving adoption, co-selling and measuring commercial performance.",
       ],
     },
