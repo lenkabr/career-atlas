@@ -62,12 +62,12 @@ export const portfolio = {
         "I have built technology partnership and integration ecosystems from scratch at two different SaaS companies — turning customer demand into repeatable product and commercial channels.",
       outcomes: [
         { value: "0 → 1", label: "Built from zero — twice" },
-        { value: "~60%", label: "of revenue from technology partnerships & integrations in one ecosystem" },
-        { value: "~$30k", label: "in new business in the final quarter — about 3× the previous best" },
+        { value: "~60%", label: "of total company ARR generated through technology partnerships and integrations — representing hundreds of thousands in recurring revenue" },
+        { value: "0 → ~20%", label: "of the company’s total qualified pipeline generated through technology partners, alongside newly won business" },
       ],
       paragraphs: [
-        "At the first company, technology partnerships and integrations grew into a major commercial channel, contributing approximately 60% of revenue.",
-        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The ecosystem was gaining its first meaningful commercial traction. In my final quarter, it generated approximately $30k in new business — around 3× the previous best quarter — with the growth engine only beginning to take hold.",
+        "At the first company, technology partnerships and integrations grew into a major commercial channel, contributing approximately 60% of total company ARR — representing hundreds of thousands in recurring revenue.",
+        "At the second, I again started from essentially zero and built the strategy, partner network, integration portfolio, operating processes, GTM motions, attribution and growth engine. The program grew from zero into a meaningful source of qualified pipeline and newly won business. By my final quarter, technology partners contributed approximately 20% of the company’s total qualified pipeline, with the growth engine still gaining momentum.",
         "This was not simply partner relationship management. It meant understanding customer technology stacks and integration demand, identifying opportunities, building business cases, prioritizing integrations, working with Engineering, launching partnerships, enabling Sales and Customer Experience, driving adoption, co-selling and measuring commercial performance.",
       ],
     },
