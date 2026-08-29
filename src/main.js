@@ -60,8 +60,15 @@ app.innerHTML = `
             <circle cx="54" cy="210" r="42" />
             <text x="54" y="214">PARTNERS</text>
           </g>
-          <circle class="impact-core" cx="210" cy="210" r="8" />
-          <text class="impact-label" x="210" y="237">BUSINESS IMPACT</text>
+          <g class="impact-target" aria-hidden="true">
+            <circle class="impact-target-outer" cx="210" cy="210" r="30" />
+            <circle class="impact-target-middle" cx="210" cy="210" r="20" />
+            <circle class="impact-target-core" cx="210" cy="210" r="9" />
+          </g>
+          <g class="impact-outcome">
+            <text class="impact-label" x="210" y="257">BUSINESS IMPACT</text>
+            <line class="impact-label-accent" x1="177" y1="265" x2="243" y2="265" />
+          </g>
         </svg>
       </aside>
     </section>
