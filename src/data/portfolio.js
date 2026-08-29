@@ -81,7 +81,7 @@ export const portfolio = {
         { name: "Zendesk", logo: "./public/logos/zendesk.svg" },
         { name: "Front", logo: "./public/logos/front.svg" },
         { name: "Help Scout", logo: "./public/logos/help-scout.svg" },
-        { name: "Freshworks", logo: "./public/logos/freshworks.svg" },
+        { name: "Freshworks", logo: "./public/logos/freshworks.svg?v=2" },
         { name: "Paylocity", logo: "./public/logos/paylocity.svg" },
         { name: "BambooHR", logo: "./public/logos/bamboohr.svg" },
         { name: "Rippling", logo: "./public/logos/rippling.svg" },
@@ -115,7 +115,7 @@ export const portfolio = {
       number: "04",
       title: "Prioritizing what deserves to be built",
       intro:
-        "I don’t prioritize integrations simply because a partner asks or one customer requests them. I combine evidence to allocate Engineering resources where they can create the most value.",
+        "I don’t prioritize an integration solely because a partner is willing to collaborate or a premium customer requests it. Both are valuable signals, but I combine them with broader evidence to allocate Engineering resources where they can create the most customer and business value.",
       equation: "Integration roadmap = customer value × business impact × strategic fit × technical feasibility",
       signals: [
         "Customer integration requests",
