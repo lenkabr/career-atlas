@@ -1,66 +1,36 @@
 # Career Atlas
 
-Career Atlas is a responsive, editorial-style personal portfolio designed to explain experience through products, integrations, partner ecosystems and operating systems rather than a conventional résumé timeline.
+**[Explore Career Atlas →](https://lenkabr.github.io/career-atlas/)**
 
-## Stack
+Career Atlas is my interactive portfolio covering the products, technology partnerships, integrations, APIs and ecosystems I have worked on and built.
 
-V1 deliberately uses no framework or runtime dependency: semantic HTML, modern CSS and small ES modules. This keeps deployment and maintenance simple while preserving reusable components and a structured content layer.
+## Why I built it
 
-## Run locally
+A standard one-page CV can summarize roles and responsibilities, but it cannot tell the full story behind the work: the problems I tackled, the systems I built, the decisions I made and the business outcomes they created.
 
-Because ES modules are used, serve the folder over HTTP rather than opening `index.html` directly.
+I built Career Atlas to make those connections visible. It gives hiring managers, founders and product leaders a clearer view of how my experience brings together product management, technology partnerships, integrations, AI and business growth.
+
+## How it was built
+
+Career Atlas is a lightweight, responsive static website designed for clarity, speed and easy iteration. It was built with:
+
+- Semantic HTML
+- Modern CSS
+- Vanilla JavaScript with ES modules
+- Structured portfolio content in `src/data/portfolio.js`
+- GitHub for version control
+- GitHub Pages for hosting
+
+The project deliberately uses no framework, database or build process. This keeps the site simple to maintain while supporting reusable components and interactive navigation.
+
+## Working on the project
+
+Most portfolio copy and structured content lives in `src/data/portfolio.js`. The interface rendering is handled in `src/components/render.js`, with the main styles in `src/styles.css`.
+
+To preview changes locally, run:
 
 ```bash
 python3 -m http.server 4173
 ```
 
-Then open `http://localhost:4173`.
-
-## Edit content
-
-All portfolio copy and structured content lives in one file:
-
-`src/data/portfolio.js`
-
-Edit that file to update:
-
-- hero positioning
-- profile / contact information
-- atlas territories
-- case studies
-- partner / platform groups
-- working principles
-
-The UI renderer is in `src/components/render.js`. Most content updates should not require changing it.
-
-### Placeholders
-
-V1 intentionally keeps unverified career content inside square-bracket placeholders such as `[Add verified adoption evidence.]`. Replace these only with facts you can substantiate.
-
-## Profile photo
-
-The About section currently uses a visual placeholder. When you have a final image, replace the `.profile-frame` placeholder in `src/main.js` with an `<img>` element and keep meaningful alt text.
-
-## CV
-
-Replace `public/cv-placeholder.pdf` with the real CV (or update `profile.cv` in the data file to a different filename).
-
-## Metadata
-
-Basic SEO, Open Graph and Twitter metadata is in `index.html`. Replace the placeholder social preview if you want a custom raster image for production.
-
-## Deploy
-
-This project is static and can be deployed to any static host, including Netlify, Vercel, Cloudflare Pages, GitHub Pages or an S3-style static bucket. Configure the site root as the repository root; no build command is required.
-
-## Checks
-
-Run JavaScript syntax checks:
-
-```bash
-node --check src/main.js
-node --check src/components/render.js
-node --check src/data/portfolio.js
-```
-
-Serve the site locally and verify that `index.html`, CSS, JavaScript and public assets return successfully.
+Then open `http://localhost:4173` in a browser.
